@@ -65,7 +65,7 @@
                   <div class="box">
                       <div class="box-header">
                           <h4 class="box-title align-items-start flex-column">
-                              New Arrivals
+                              Members
                               <small class="subtitle">More than 400+ new members</small>
                           </h4>
                       </div>
