@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Backend\UserController;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -41,6 +42,12 @@ Route::prefix('users')->group(function(){
     Route::get('/view',[UserController::class,'UserView'])->name('user.view');
     Route::get('/add',[UserController::class,'AddUser'])->name('add.user');
     Route::post('/store',[UserController::class,'UserStore'])->name('users.store');
+    Route::get('/edit/{id}',[UserController::class,'EditUser'])->name('users.edit');
+    Route::post('/update/{id}',[UserController::class,'UpdateUser'])->name('users.update');
+    Route::get('/delete/{id}',[UserController::class,'DeleteUser'])->name('users.delete');
+
+   
+
 
 
 });

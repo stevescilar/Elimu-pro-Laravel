@@ -53,8 +53,8 @@
                               <td>{{ $user ->name}}</td>
                               <td>{{ $user ->email}} </td>
                               <td>
-                                <a href="" class="btn btn-info"><i class="mdi mdi-account-edit"></i> Edit</a> &nbsp;
-                                <a href="" class="btn btn-danger"><i class="mdi mdi-account-remove"></i> Delete</a>
+                                <a href="{{ route('users.edit',$user->id) }}" class="btn btn-info"><i class="mdi mdi-account-edit"></i> Edit</a> &nbsp;
+                                <a href="{{ route('users.delete',$user->id) }}" class="btn btn-danger" id="delete"><i class="mdi mdi-account-remove"></i> Delete</a>
                               </td>
                           </tr>
                         @endforeach
