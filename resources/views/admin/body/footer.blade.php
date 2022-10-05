@@ -9,5 +9,5 @@
 		  </li>
 		</ul>
     </div>
-	<a href="#"> Developed by MUAMBI</a>. All Rights Reserved &COPY; TechIT Enterprises 2022
+	<a href="#"> Developed by Muambi</a>. All Rights Reserved &COPY; TechIT Enterprises 2022
   </footer>
