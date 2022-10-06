@@ -108,7 +108,7 @@
                                                 </div>
                                                 <div class="form-group">
                                                     <div class="controls">
-                                                        <img id="showImage" class="rounded-circle" src="{{(!empty($user->image))? url('upload/user_images/'.$user->image):url('upload/no_image.jpg') }}" alt="User Avatar" style="height: 200px; width: 200px; border: 1px solid #000000;">
+                                                        <img id="showImage" class="rounded-circle" src="{{(!empty($user->image))? url('upload/user_images/'.$user->image):url('upload/no_image.jpg') }}" alt="User Avatar" style="height: 150px; width: 150px; border: 1px solid #000000;">
                                                     </div>
                                                 </div>
                                             </div>
@@ -135,8 +135,6 @@
    
            </section>
 
-
-
     
     </div>
 </div>
@@ -144,7 +142,7 @@
 <script type="text/javascript">
     $(document).ready(function(){
         $('#image').change(function(e){
-            var reader  new FileReader();
+            var reader = new FileReader();
             reader.onload  = function(e){
                 $('#showImage').attr('src',e.target.result);
             }
