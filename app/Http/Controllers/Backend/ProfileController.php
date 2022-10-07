@@ -24,4 +24,13 @@ class ProfileController extends Controller
 
         return view('backend.user.edit_profile',compact('editData'));
     }
+
+    public function ProfileStore(Request $request){
+        $data = User::find(Auth::user()->$id);
+        $data->name = $request->name;
+        $data->email = $request->email;
+        $data->address = $request->address;
+        $data->mobile = $request->mobile;
+        $data->gender = $request->gender;
+    }
 }

@@ -63,7 +63,7 @@
                     <div class="col-sm-4">
                       <div class="description-block">
                         <h5 class="description-header">Gender</h5>
-                        <span class="description-text">{{ $user->address }}</span>
+                        <span class="description-text">{{ $user->gender }}</span>
                       </div>
                       <!-- /.description-block -->
                     </div>
