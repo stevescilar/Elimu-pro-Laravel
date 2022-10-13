@@ -49,7 +49,7 @@
                         <h5 class="description-header">{{ $user->mobile }}</h5>
                         <span class="description-text">Mobile</span>
                       </div>
-                      <!-- /.descriptionxx-block -->
+                      <!-- /.description-block -->
                     </div>
                     <!-- /.col -->
                     <div class="col-sm-4 br-1 bl-1">
