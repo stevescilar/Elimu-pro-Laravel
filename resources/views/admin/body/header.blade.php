@@ -101,7 +101,7 @@
 			</ul>
 		  </li>	
 		  
-
+{{-- make the profile image available in all pages --}}
 		  @php
 			  $user  = DB::table('users')->where('id',Auth::user()->id)->first();
 		  @endphp
