@@ -50,7 +50,7 @@
                           <tr>
                               <td>{{ $key+1 }}</td>
                              
-                              <td>{{ $student ->name}}</td>
+                              <td>{{ $student->name}}</td>
                             
                               <td>
                                 <a href="{{ route('users.edit',$student->id) }}" class="btn btn-info"><i class="mdi mdi-account-edit"></i> Edit</a> &nbsp;
