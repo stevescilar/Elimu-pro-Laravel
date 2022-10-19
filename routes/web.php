@@ -39,7 +39,6 @@ Route::get('/admin/logout',[AdminController::class,'Logout'])->name('admin.logou
 // User Management All Routes
 // grouped routes
 Route::prefix('users')->group(function(){
-
     Route::get('/view',[UserController::class,'UserView'])->name('user.view');
     Route::get('/add',[UserController::class,'AddUser'])->name('add.user');
     Route::post('/store',[UserController::class,'UserStore'])->name('users.store');
@@ -49,7 +48,6 @@ Route::prefix('users')->group(function(){
 });
 /// user profile and password routes
 Route::prefix('profile')->group(function(){
-
     Route::get('/view',[ProfileController::class,'ProfileView'])->name('profile.view');
     Route::get('/edit/{id}',[ProfileController::class,'ProfileEdit'])->name('profile.edit');
     Route::post('/store',[ProfileController::class,'ProfileStore'])->name('profile.store');   
