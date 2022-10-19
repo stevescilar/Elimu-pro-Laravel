@@ -58,6 +58,19 @@
             <li><a href="{{ route('password.view')}}"><i class="ti-more"></i>Change password</a></li>
           </ul>
         </li>
+        {{-- setups area --}}
+        <li class="treeview {{ ($prefix == '/setups')?'active':'' }}">
+          <a href="#">
+            <i data-feather="settings"></i> <span>Setup Management</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-right pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{{ route('student.class.view') }}"><i class="ti-more"></i>Student Class</a></li>
+            
+          </ul>
+        </li>
         <li class="treeview">
           <a href="#">
             <i data-feather="file"></i>
