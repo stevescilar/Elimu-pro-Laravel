@@ -58,7 +58,10 @@ Route::prefix('profile')->group(function(){
 
 /// Setup Management routes
 Route::prefix('setups')->group(function(){
-    
-    Route::get('student/class/view',[StudentClassController::class,'ViewStudent'])->name('student.class.view');
+
+    Route::get('/student/class/view',[StudentClassController::class,'ViewStudent'])->name('student.class.view');
+    Route::get('/student/class/add',[StudentClassController::class,'StudentClassAdd'])->name('student.class.add');
+    Route::post('/student/class/store',[StudentClassController::class,'StudentClassStore'])->name('store.student.class');   
+
     
 });
