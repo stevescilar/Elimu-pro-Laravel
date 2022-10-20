@@ -22,7 +22,7 @@ class UserController extends Controller
             'email' => 'required|unique:users',
             'name'  => 'required',
         ]);
-
+<!-- snns -->
         $data = new User();
         $data->usertype = $request->usertype;
         $data->name = $request->name;
