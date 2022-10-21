@@ -47,7 +47,7 @@ Route::prefix('users')->group(function(){
     Route::post('/update/{id}',[UserController::class,'UpdateUser'])->name('users.update');
     Route::get('/delete/{id}',[UserController::class,'DeleteUser'])->name('users.delete');
 });
-/// user profile and password routes
+/// user profile and password route.
 Route::prefix('profile')->group(function(){
     Route::get('/view',[ProfileController::class,'ProfileView'])->name('profile.view');
     Route::get('/edit/{id}',[ProfileController::class,'ProfileEdit'])->name('profile.edit');
