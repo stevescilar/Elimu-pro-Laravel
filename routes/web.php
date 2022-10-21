@@ -56,7 +56,7 @@ Route::prefix('profile')->group(function(){
     Route::post('/password/update',[ProfileController::class,'PasswordUpdate'])->name('password.update');
 });
 
-/// Setup Management routes writeup
+/// Setup Management routes 
 Route::prefix('setups')->group(function(){
 
     Route::get('/student/class/view',[StudentClassController::class,'ViewStudent'])->name('student.class.view');
