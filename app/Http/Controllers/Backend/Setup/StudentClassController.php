@@ -58,7 +58,7 @@ class StudentClassController extends Controller
 
         $notification = array(
             'message' =>'Class Updated Successfully',
-            'alert-type'=>'success'
+            'alert-type'=>'info'
         );
         return redirect()->route('student.class.view')->with($notification);
 
