@@ -69,7 +69,7 @@ class StudentClassController extends Controller
         $user->delete();
 
         $notification = array(
-            'message' =>'Class deletedSuccessfully',
+            'message' =>'Class deleted Successfully',
             'alert-type'=>'warning'
         );
         return redirect()->route('student.class.view')->with($notification);
