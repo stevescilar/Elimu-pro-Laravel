@@ -19,8 +19,7 @@ class StudentClassController extends Controller
     public function StudentClassAdd(){
         return view('backend.setup.student_class.add_class');
     }
-
-
+    
     public function StudentClassStore(Request $request){
 
         $validateData = $request->validate([
