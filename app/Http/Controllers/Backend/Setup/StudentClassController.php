@@ -57,7 +57,7 @@ class StudentClassController extends Controller
 
 
         $notification = array(
-            'message' =>'Class Updated Successfully',
+            'message' =>'Class Updated Successfully!',
             'alert-type'=>'info'
         );
         return redirect()->route('student.class.view')->with($notification);
@@ -69,7 +69,7 @@ class StudentClassController extends Controller
         $user->delete();
 
         $notification = array(
-            'message' =>'Class deleted Successfully',
+            'message' =>'Class Deleted Successfully',
             'alert-type'=>'danger'
         );
         return redirect()->route('student.class.view')->with($notification);
