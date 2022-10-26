@@ -33,7 +33,7 @@ class StudentClassController extends Controller
 
         $notification = array(
             'message' =>'Class Inserted Successfully',
-            'alert-type'=>'info'
+            'alert-type'=>'success'
         );
         return redirect()->route('student.class.view')->with($notification);
     }
