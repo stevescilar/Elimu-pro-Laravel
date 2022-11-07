@@ -22,8 +22,6 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
-
-
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
@@ -66,6 +64,4 @@ Route::prefix('setups')->group(function(){
     Route::post('/student/class/update/{id}',[StudentClassController::class,'StudentClassUpdate'])->name('student.class.update');
     Route::get('/student/class/delete/{id}',[StudentClassController::class,'ClassStudentDelete'])->name('student.class.delete');
 
-
-    
 });
