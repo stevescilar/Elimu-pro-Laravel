@@ -6,6 +6,8 @@ use App\Http\Controllers\Backend\UserController;
 use App\Http\Controllers\Backend\ProfileController;
 use App\Http\Controllers\Backend\Setup\StudentClassController;
 use App\Http\Controllers\Backend\Setup\StudentYearController;
+use App\Http\Controllers\Backend\Setup\StudentGroupController;
+
 
 
 /*
@@ -73,4 +75,13 @@ Route::prefix('setups')->group(function(){
     Route::get('/student/year/edit/{id}',[StudentYearController::class,'StudentYearEdit'])->name('student.year.edit');  
     Route::post('/student/year/update/{id}',[StudentYearController::class,'StudentYearUpdate'])->name('student.year.update');
     Route::get('/student/year/delete/{id}',[StudentYearController::class,'YearStudentDelete'])->name('student.year.delete');
+
+    // student group
+    Route::get('/student/group/view',[StudentGroupController::class,'ViewGroup'])->name('student.group.view');
+    Route::get('/student/group/add',[StudentGroupController::class,'StudentGroupAdd'])->name('student.group.add');
+    Route::post('/student/group/store',[StudentGroupController::class,'StudentGroupStore'])->name('store.student.group');
+    Route::get('/student/group/edit/{id}',[StudentGroupController::class,'StudentGroupEdit'])->name('student.group.edit');  
+    Route::post('/student/group/update/{id}',[StudentGroupController::class,'StudentGroupUpdate'])->name('student.group.update');
+    Route::get('/student/group/delete/{id}',[StudentGroupController::class,'GroupStudentDelete'])->name('student.group.delete');
+    
 });
