@@ -12,7 +12,7 @@
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="#"><i class="mdi mdi-home-outline"></i></a></li>
                                 <li class="breadcrumb-item" aria-current="page">Subjects</li>
-                                <li class="breadcrumb-item active" aria-current="page">Add Student</li>
+                                <li class="breadcrumb-item active" aria-current="page">Add Student`</li>
                             </ol>
                         </nav>
                     </div>
