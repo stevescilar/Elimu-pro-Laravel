@@ -64,4 +64,8 @@ Route::prefix('setups')->group(function(){
     Route::post('/student/class/update/{id}',[StudentClassController::class,'StudentClassUpdate'])->name('student.class.update');
     Route::get('/student/class/delete/{id}',[StudentClassController::class,'ClassStudentDelete'])->name('student.class.delete');
 
+    // student year route
+
+    Route::get('/student/year/view',[StudentClassController::class,'ViewYear'])->name('student.year.view');
+
 });
