@@ -101,7 +101,6 @@
 			</ul>
 		  </li>	
 		  
-{{-- make the profile image available in all pages --}}
 		  @php
 			  $user  = DB::table('users')->where('id',Auth::user()->id)->first();
 		  @endphp
@@ -113,7 +112,7 @@
 			<ul class="dropdown-menu animated flipInX">
 			  <li class="user-body">
 				 <a class="dropdown-item" href="{{ route('profile.view')}} "><i class="ti-user text-muted mr-2"></i> Profile</a>
-				 <a class="dropdown-item" href="#"><i class="ti-wallet text-muted mr-2"></i> AreA</a>
+				 <a class="dropdown-item" href="#"><i class="ti-wallet text-muted mr-2"></i> AreAa</a>
 				 <a class="dropdown-item" href="#"><i class="ti-settings text-muted mr-2"></i> Settings</a>
 				 <div class="dropdown-divider"></div>
 				 <a class="dropdown-item" href="{{ route('admin.logout') }}"><i class="ti-lock text-muted mr-2"></i> Logout</a>

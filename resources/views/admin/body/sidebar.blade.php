@@ -1,10 +1,7 @@
 @php
     $prefix = Request::route()->getPrefix();
     $route  = Route::current()->getName();
-
 @endphp
-
-
 
 <aside class="main-sidebar">
     <!-- sidebar-->
@@ -58,7 +55,7 @@
             <li><a href="{{ route('password.view')}}"><i class="ti-more"></i>Change password</a></li>
           </ul>
         </li>
-        {{-- setups area --}}
+        
         <li class="treeview {{ ($prefix == '/setups')?'active':'' }}">
           <a href="#">
             <i data-feather="settings"></i> <span>Setup Management</span>
@@ -72,6 +69,8 @@
             <li><a href="{{ route('student.group.view') }}"><i class="ti-more"></i>Subjects</a></li>
             <li><a href="{{ route('student.shift.view') }}"><i class="ti-more"></i>Shifts</a></li>
             <li><a href="{{ route('fee.category.view') }}"><i class="ti-more"></i>Fee Category</a></li>
+            <li><a href="{{ route('fee.amount.view') }}"><i class="ti-more"></i>Fee Amount</a></li>
+
 
             
           </ul>

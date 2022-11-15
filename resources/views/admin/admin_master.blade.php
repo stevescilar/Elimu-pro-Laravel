@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="{{ asset('backend/css/vendors_css.css') }}">
 	  
 	<!-- Style-->  
+	
 	<link rel="stylesheet" href="{{ asset('backend/css/style.css') }}">
 	<link rel="stylesheet" href="{{ asset('backend/css/skin_color.css') }}">
 	
@@ -28,9 +29,10 @@
 @include('admin.body.header')
   
   <!-- Left side column. contains the logo and sidebar -->
-@include('admin.body.sidebar')
+
   <!-- Content Wrapper. Contains page content -->
 @yield('admin')
+@include('admin.body.sidebar')
   <!-- /.content-wrapper -->
 @include('admin.body.footer')
 
@@ -336,7 +338,7 @@
 						window.location.href  = link
 						Swal.fire(
 						'Deleted!',
-						'Your file has been deleted.',
+						'Deletion Successful.',
 						'success'
 						)
 					}

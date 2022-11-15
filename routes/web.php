@@ -9,6 +9,8 @@ use App\Http\Controllers\Backend\Setup\StudentYearController;
 use App\Http\Controllers\Backend\Setup\StudentGroupController;
 use App\Http\Controllers\Backend\Setup\StudentShiftController;
 use App\Http\Controllers\Backend\Setup\FeeCategoryController;
+use App\Http\Controllers\Backend\Setup\FeeAmountController;
+
 
 
 /*
@@ -106,5 +108,12 @@ Route::prefix('setups')->group(function(){
     // fee.category.update
     Route::post('/fee/category/update/{id}',[FeeCategoryController::class,'UpdateCat'])->name('fee.category.update');
 
+    // Fee Amount Category
+    // fee.amount.view
+    Route::get('/fee/amount/view',[FeeAmountController::class,'ViewFeeAmount'])->name('fee.amount.view');
+    // fee.amount.add
+    Route::get('/fee/amount/add',[FeeAmountController::class,'AddAmount'])->name('fee.amount.add');
+    // store.fee.amount
+    Route::post('/fee/amount/store',[FeeAmountController::class,'StoreFeeAmount'])->name('store.fee.amount');
 
 });
