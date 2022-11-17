@@ -53,7 +53,7 @@
                               <td>{{ $amount['fee_category']['name']}}</td>
                             
                               <td>
-                                <a href="" class="btn btn-info"><i class="mdi mdi-account-edit"></i> Edit</a> &nbsp;
+                                <a href="{{ route('fee.amount.edit',$amount->fee_category_id) }}" class="btn btn-info"><i class="mdi mdi-account-edit"></i> Edit</a> &nbsp;
                                 <a href="" class="btn btn-danger" id="delete"><i class="mdi mdi-account-remove"></i> Delete</a>
                               </td>
                           </tr>
