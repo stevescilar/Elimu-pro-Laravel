@@ -74,6 +74,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-md-2" style="padding-top:25px;">
+                                                        {{-- add button via Javascript --}}
                                                         <span class="btn btn-success addeventmore"><i class="fa fa-plus-circle"></i></span>
                                                     </div>
                                                 </div>
