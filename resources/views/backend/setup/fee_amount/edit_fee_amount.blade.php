@@ -12,7 +12,7 @@
                         <nav>
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="#"><i class="mdi mdi-home-outline"></i></a></li>
-                                <li class="breadcrumb-item" aria-current="page">Fee</li>
+                                <li class="breadcrumb-item" aria-current="page">Fees</li>
                                 <li class="breadcrumb-item active" aria-current="page">Edit Amount</li>
                             </ol>
                         </nav>
